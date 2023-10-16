@@ -1,6 +1,6 @@
 const express = require('express');
 const axios = require('axios');
-const serverless = require('serverless-http');
+
 
 const app = express();
 const port = 5501; // Choose a port for your proxy server
@@ -27,4 +27,3 @@ app.listen(port, () => {
   console.log(`Proxy server is running on port ${port}`);
 });
 
-module.exports.handler = serverless(app)
